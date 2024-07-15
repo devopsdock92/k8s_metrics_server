@@ -49,8 +49,11 @@ spec:
           periodSeconds: 10
         resources:
           requests:
-            cpu: 100m
-            memory: 200Mi
+            cpu: 45m
+            memory: 55Mi
+          limits:
+            cpu: 50m
+            memory: 60Mi
         securityContext:
           readOnlyRootFilesystem: true
           runAsNonRoot: true
